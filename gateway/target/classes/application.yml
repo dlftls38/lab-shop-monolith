@@ -9,7 +9,7 @@ spring:
     gateway:
       routes:
         - id: monolith
-          uri: http://localhost:8081
+          uri: http://localhost:0
           predicates:
             - Path=/orders/**, /inventories/**, 
         - id: frontend
